@@ -573,6 +573,59 @@ body {
             border: 1px solid #e63a46;
         }
     }
+
+    .owl-carousel {
+        .owl-prev,
+        .owl-next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 25px;
+            height: 25px;
+        }
+        .owl-prev {
+            left: -2rem;
+        }
+        .owl-next {
+            right: -2rem;
+        }
+    }
+    .owl-carousel {
+        .owl-nav {
+            button.owl-prev {
+                background: rgba(0, 0, 0, 0.5);
+                border: none;
+                color: #fff;
+                width: 40px;
+                height: 40px;
+                span
+                {
+                    font-size: 30px;
+                    line-height: 1;
+                }
+            }
+            button.owl-next {
+                background: rgba(0, 0, 0, 0.5);
+                border: none;
+                color: #fff;
+                width: 40px;
+                height: 40px;
+                span
+                {
+                    font-size: 30px;
+                    line-height: 1;
+                }
+            }
+        }
+        button.owl-dot {
+            background: rgba(0, 0, 0, 0.5);
+            border: none;
+            color: #fff;
+            width: 40px;
+            height: 40px;
+        }
+    }
+
     .content {
         position: relative;
         width: 100%;
@@ -840,6 +893,49 @@ body {
     }
 }
 
+.nearByCities {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    .card {
+        .card-body {
+            padding: 0px;
+            h4 {
+                color: #262626;
+                font-weight: bold;
+                font-size: 16px;
+                margin-bottom: 10px;
+                padding-top: 15px;
+                padding-left: 15px;
+            }
+            p {
+                color: #868686;
+                font-weight: normal;
+                font-size: 13px;
+                text-align: center;
+            }
+            .table {
+                thead {
+                    background-color: #1e3557;
+                    color: #fff;
+                    font-weight: normal;
+                    font-size: 13px;
+                    th {
+                        padding: 5px 15px;
+                    }
+                }
+                tbody {
+                    color: #262626;
+                    font-weight: normal;
+                    font-size: 13px;
+
+                    td {
+                        padding: 5px 14px;
+                    }
+                }
+            }
+        }
+    }
+}
 .TrendingToyotaCars {
     margin-top: 30px;
     margin-bottom: 30px;
@@ -899,5 +995,30 @@ body {
                 }
             }
         }
+    }
+}
+.MonthlyInstallmentFortuner {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    .Monthlyinstallment {
+        color: #262626;
+        font-weight: bold;
+        font-size: 16px;
+        margin-top: 0px;
+    }
+    p {
+        color: #262626;
+        font-weight: normal;
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    strike {
+        color: #6d7278;
+        font-weight: normal;
+        font-size: 10px;
+        margin-top: 0px;
+    }
+    img {
+        margin-top: 20px;
     }
 }

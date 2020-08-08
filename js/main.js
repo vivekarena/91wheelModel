@@ -19,7 +19,7 @@ $("#bannerSlider").owlCarousel({
 });
 $("#ExpertOpinion,#ExpertOpinion2").owlCarousel({
     margin: 0,
-    nav: true,
+    nav: false,
     dots: false,
     loop: true,
     autoplay: true,
@@ -39,10 +39,10 @@ $("#ExpertOpinion,#ExpertOpinion2").owlCarousel({
 $("#TopNotch").owlCarousel({
     margin: 10,
     loop: true,
-    autoPlay: true,
+    autoplay: true,
     smartSpeed: 1000,
     autoWidth:true,
-    nav: false,
+    nav: true,
     items:4,
     dots: false,
     responsive: {
@@ -61,7 +61,7 @@ $("#TopNotch").owlCarousel({
 $("#DealersNearYou").owlCarousel({
     margin: 10,
     loop: true,
-    autoPlay: true,
+    autoplay: true,
     smartSpeed: 1000,
     nav: true,
     dots: false,
