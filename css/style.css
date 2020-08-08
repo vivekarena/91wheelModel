@@ -1,0 +1,603 @@
+body {
+  font-family: 'Overpass', sans-serif;
+}
+
+.bannerBg {
+  background-image: url("/img/bannerBg.jpg");
+  height: 552px;
+  background-position: center center;
+}
+
+.bannerBg .productInfo {
+  position: absolute;
+  top: 14%;
+  right: 30px;
+  background-color: #fff;
+  border-radius: 6px;
+  height: 372px;
+  width: 430px;
+}
+
+.bannerBg .productInfo .pdLeft {
+  padding: 20px;
+}
+
+.bannerBg .productInfo .ProName {
+  font-size: 20px;
+  font-weight: bold;
+  color: #262626;
+  margin-top: 10px;
+}
+
+.bannerBg .productInfo .ProName span {
+  font-size: 12px;
+  font-weight: normal;
+  color: #888888;
+}
+
+.bannerBg .productInfo .Reviews {
+  font-size: 12px;
+  font-weight: normal;
+  color: #1a9fa5;
+  margin-top: 3px;
+}
+
+.bannerBg .productInfo label {
+  font-size: 12px;
+  font-weight: normal;
+  color: #949494;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.bannerBg .productInfo select {
+  border: none;
+  border-bottom-color: #ccc;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  padding-left: 0px;
+}
+
+.bannerBg .productInfo .ProPrice {
+  color: #262626;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.bannerBg .productInfo .ViewPrice {
+  color: #1a9fa5;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.bannerBg .productInfo .ContactDealer {
+  border-radius: 5px;
+  border: solid 1px #e63a46;
+  background-color: #ffffff;
+  width: 127px;
+  height: 36px;
+  color: #e63a46;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.bannerBg .productInfo .ContactDealer:hover {
+  border: solid 1px #e63a46;
+  background-color: #e63a46;
+  color: #fff;
+}
+
+.bannerBg .productInfo .ViewAvailableOffers {
+  border-radius: 5px;
+  border: solid 1px #e63a46;
+  background-color: #e63a46;
+  width: 165px;
+  height: 36px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.bannerBg .productInfo .ViewAvailableOffers:hover {
+  border: solid 1px #e63a46;
+  background-color: #fff;
+  color: #e63a46;
+}
+
+.bannerBg .productInfo .ExpertReview {
+  border-radius: 4px;
+  background-color: rgba(20, 128, 22, 0.09);
+  width: 420px;
+  height: 69px;
+  color: #262626;
+  font-size: 12px;
+  font-weight: bold;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.bannerBg .productInfo .ExpertReview span {
+  color: #148016;
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.bannerBg .productInfo .ExpertReview label {
+  font-size: 12px;
+  font-weight: normal;
+  color: #434343;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.bannerBg .productInfo .rightArrow {
+  width: 100%;
+  height: 68px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.bannerBg .productInfo .rightArrow .fas {
+  font-size: 30px;
+}
+
+.form-control:focus {
+  outline: 0;
+  border-color: transparent !important;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.pageBreadcrumb {
+  background-color: #f2f2f2;
+}
+
+.pageBreadcrumb .breadcrumb-item + .breadcrumb-item::before {
+  content: ">";
+}
+
+.pageBreadcrumb .breadcrumb {
+  background-color: #f2f2f2;
+}
+
+.pageBreadcrumb .breadcrumb .breadcrumb-item a {
+  font-size: 11px;
+  font-weight: normal;
+  color: #434343;
+  margin-top: 4px;
+}
+
+.pageBreadcrumb .breadcrumb .breadcrumb-item.active a {
+  font-size: 11px;
+  font-weight: normal;
+  color: #e63a46;
+  margin-top: 4px;
+}
+
+.KeySpecifications {
+  margin-top: 40px;
+}
+
+.KeySpecifications h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #262626;
+}
+
+.KeySpecifications .designArea .widt20 {
+  width: 20%;
+  float: left;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.KeySpecifications .designArea .widt20 .graphic {
+  width: 70px;
+  height: 70px;
+  margin: auto;
+  border-radius: 100%;
+}
+
+.KeySpecifications .designArea .widt20 .graphic img {
+  display: block;
+  margin: auto;
+}
+
+.KeySpecifications .designArea .widt20 .mileage {
+  font-size: 13px;
+  font-weight: normal;
+  color: #848484;
+  text-align: center;
+  margin-top: 0px;
+}
+
+.KeySpecifications .designArea .widt20 .kmpl {
+  font-size: 16px;
+  font-weight: bold;
+  color: #262626;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.KeySpecifications .designArea a {
+  font-size: 14px;
+  font-weight: bold;
+  color: #e63a46;
+  margin-left: 35px;
+}
+
+.PrdouctVariants {
+  margin-top: 40px;
+}
+
+.PrdouctVariants h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #262626;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.PrdouctVariants .outerBox {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: 300px;
+  overflow-y: scroll;
+}
+
+.PrdouctVariants .table thead {
+  background-color: #457c9d;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.PrdouctVariants .table thead th {
+  padding: 10px 5px;
+}
+
+.PrdouctVariants .table tbody td {
+  padding: 10px 5px;
+}
+
+.PrdouctVariants .table tbody .col-lg-4 {
+  padding: 0px 5px;
+}
+
+.PrdouctVariants .table tbody .VariantName {
+  font-size: 12px;
+  font-weight: bold;
+  color: #262626;
+}
+
+.PrdouctVariants .table tbody .showRoomPrice {
+  font-size: 12px;
+  font-weight: normal;
+  color: #457c9d;
+}
+
+.PrdouctVariants .table tbody .viewPrice {
+  font-size: 12px;
+  font-weight: bold;
+  color: #262626;
+}
+
+.PrdouctVariants .table tbody label {
+  font-size: 12px;
+  font-weight: normal;
+  color: #848484;
+  margin-bottom: 0px;
+}
+
+.PrdouctVariants .table tbody .ProInfo {
+  font-size: 12px;
+  font-weight: bold;
+  color: #262626;
+}
+
+.PrdouctVariants .table tbody a {
+  font-size: 14px;
+  font-weight: bold;
+  color: #e63a46;
+}
+
+.LatestUpdate {
+  margin-top: 50px;
+}
+
+.LatestUpdate h2 {
+  color: #262626;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.LatestUpdate p {
+  color: #848484;
+  font-size: 14px;
+}
+
+.LatestUpdate p strong {
+  color: #696969;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.ExpertOpinion {
+  margin-top: 50px;
+}
+
+.ExpertOpinion h2 {
+  color: #262626;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.ExpertOpinion p {
+  color: #262626;
+  font-size: 16px;
+  font-weight: normal;
+  width: 80%;
+  margin: auto;
+  margin-top: 5px;
+}
+
+.ExpertOpinion p .numb {
+  font-size: 16px;
+  font-weight: normal;
+  text-align: right;
+  float: right;
+}
+
+.ExpertOpinion .progress {
+  height: 5px;
+  width: 80%;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.ExpertOpinion .progress .progress-bar {
+  width: 80%;
+}
+
+.ExpertOpinion .expertName {
+  color: #262626;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 15px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.ExpertOpinion .info {
+  color: #6d7278;
+  font-weight: normal;
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.ExpertOpinion .owl-carousel .item img {
+  display: block;
+  margin: auto;
+  width: 130px;
+  height: 130px;
+  margin-top: 20px;
+}
+
+.ExpertOpinion .FeaturesCar1 {
+  background-color: #ebf4fd;
+  border: 1px solid #026cdf;
+  border-radius: 5px;
+  height: 160px;
+  margin-top: 10px;
+  width: 100%;
+  padding: 15px;
+}
+
+.ExpertOpinion .FeaturesCar1 h5 {
+  color: #262626;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.ExpertOpinion .FeaturesCar1 ul {
+  padding-left: 13px;
+}
+
+.ExpertOpinion .FeaturesCar1 ul li {
+  color: #6d7278;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.ExpertOpinion .FeaturesCar1 a {
+  color: #026cdf;
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.ExpertOpinion .FeaturesCar2 {
+  background-color: #fbebeb;
+  border: 1px solid #d93a3a;
+  border-radius: 5px;
+  height: 160px;
+  margin-top: 10px;
+  width: 100%;
+  padding: 15px;
+}
+
+.ExpertOpinion .FeaturesCar2 h5 {
+  color: #262626;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.ExpertOpinion .FeaturesCar2 ul {
+  padding-left: 13px;
+}
+
+.ExpertOpinion .FeaturesCar2 ul li {
+  color: #6d7278;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.ExpertOpinion .FeaturesCar2 a {
+  color: #d93a3a;
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.UserReviews {
+  margin-top: 50px;
+}
+
+.UserReviews .buttons {
+  margin-top: 30px;
+}
+
+.UserReviews .buttons .CarReview {
+  color: #e63a46;
+  background-color: transparent;
+  border: 1px solid #e63a46;
+  margin-right: 5px;
+}
+
+.UserReviews .buttons .CarReview:hover {
+  color: #fff;
+  background-color: #e63a46;
+  border: 1px solid #e63a46;
+}
+
+.UserReviews .buttons .UserReviewsBtn {
+  color: #fff;
+  background-color: #e63a46;
+  border: 1px solid #e63a46;
+  margin-left: 5px;
+}
+
+.UserReviews .buttons .UserReviewsBtn:hover {
+  color: #e63a46;
+  background-color: transparent;
+  border: 1px solid #e63a46;
+}
+
+.UserReviews .nav-tabs .nav-item.show .nav-link {
+  color: #e63a46;
+  background-color: transparent;
+  border: none;
+}
+
+.UserReviews .nav-tabs .nav-link.active {
+  color: #e63a46;
+  background-color: transparent;
+  border: none;
+  border-bottom-color: #e63a46;
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+}
+
+.UserReviews .nav-tabs .nav-item {
+  color: #000;
+  background-color: transparent;
+}
+
+.UserReviews .card .card-body {
+  padding: 20px 0px;
+}
+
+.UserReviews .card .card-body .leftArea {
+  border-right-color: #cfcfcf;
+  border-right-style: solid;
+  border-right-width: 1px;
+}
+
+.UserReviews .card .card-body .leftArea img {
+  display: block;
+  margin: auto;
+}
+
+.UserReviews .card .card-body .leftArea .uName {
+  color: #262626;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.UserReviews .card .card-body .leftArea .lbl {
+  color: #a2a2a2;
+  font-weight: normal;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.UserReviews .card .card-body .leftArea .info {
+  color: #262626;
+  font-weight: normal;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 0px;
+}
+
+.UserReviews .card .card-body .rightArea {
+  padding: 0px 10px 0px 0px;
+}
+
+.UserReviews .card .card-body .rightArea h4 {
+  color: #262626;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 15px;
+  text-transform: uppercase;
+}
+
+.UserReviews .card .card-body .rightArea p {
+  color: #262626;
+  font-weight: normal;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.UserReviews .card .card-body .Feature {
+  color: #1a9fa5;
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.UserReviews .card .card-body .FeatureWise {
+  color: #262626;
+  font-weight: bold;
+  font-size: 12px;
+  margin-top: 5px;
+  width: 33.3%;
+  float: left;
+}
+
+.UserReviews .card .card-body .FeatureWise span {
+  color: #898989;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.UserReviews .card .card-body .carImage {
+  color: #1a9fa5;
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 10px;
+}
+/*# sourceMappingURL=style.css.map */
