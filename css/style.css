@@ -1,5 +1,5 @@
 body {
-  font-family: 'Overpass', sans-serif;
+  font-family: "Overpass", sans-serif;
 }
 
 .bannerBg {
@@ -599,5 +599,387 @@ body {
   font-weight: bold;
   font-size: 14px;
   margin-top: 10px;
+}
+
+.TopNotch {
+  margin-top: 50px;
+}
+
+.TopNotch h2 {
+  color: #262626;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+.TopNotch p {
+  color: #262626;
+  font-size: 16px;
+  font-weight: normal;
+  width: 80%;
+  margin: auto;
+  margin-top: 5px;
+}
+
+.TopNotch .btn {
+  color: #fff;
+  background-color: #e63a46;
+  border: 1px solid #e63a46;
+  margin-top: 15px;
+}
+
+.TopNotch .btn:hover {
+  color: #e63a46;
+  background-color: transparent;
+  border: 1px solid #e63a46;
+}
+
+.TopNotch .content {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.TopNotch .content .content-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.TopNotch .content:hover .content-overlay {
+  opacity: 1;
+}
+
+.TopNotch .content:hover .content-details {
+  top: 80%;
+  left: 50%;
+  opacity: 1;
+}
+
+.TopNotch .content-image {
+  width: 100%;
+}
+
+.TopNotch .content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.TopNotch .content-details p {
+  color: #fff;
+  font-size: 13px;
+  font-weight: normal;
+  border-left-color: #e63a46;
+  border-left-style: solid;
+  border-left-width: 2px;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.TopNotch .fadeIn-bottom {
+  top: 80%;
+}
+
+.TopNotch .fadeIn-top {
+  top: 20%;
+}
+
+.TopNotch .fadeIn-left {
+  left: 20%;
+}
+
+.TopNotch .fadeIn-right {
+  left: 80%;
+}
+
+.DealersNearYou {
+  margin-top: 50px;
+}
+
+.DealersNearYou .owl-carousel .owl-prev,
+.DealersNearYou .owl-carousel .owl-next {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 25px;
+  height: 25px;
+}
+
+.DealersNearYou .owl-carousel .owl-prev {
+  left: -2rem;
+}
+
+.DealersNearYou .owl-carousel .owl-next {
+  right: -2rem;
+}
+
+.DealersNearYou .owl-carousel .owl-nav button.owl-prev {
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+}
+
+.DealersNearYou .owl-carousel .owl-nav button.owl-next {
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+}
+
+.DealersNearYou .owl-carousel button.owl-dot {
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+}
+
+.DealersNearYou h2 {
+  color: #262626;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.DealersNearYou h2 span {
+  color: #e63a46;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.DealersNearYou h2 span small {
+  color: #888888;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.DealersNearYou .card h6 {
+  color: #262626;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.DealersNearYou .card p {
+  color: #686767;
+  font-size: 14px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+.DealersNearYou .card p img {
+  width: 20px;
+  height: 20px;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.DealersNearYou .card .wtsApp {
+  color: #42a956;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.DealersNearYou .card .wtsApp img {
+  width: 20px;
+  height: 20px;
+  float: left;
+  margin-right: 10px;
+}
+
+.DiscontinuedModels {
+  margin-top: 50px;
+}
+
+.DiscontinuedModels h2 {
+  color: #262626;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.DiscontinuedModels .card {
+  margin-bottom: 10px;
+}
+
+.DiscontinuedModels .card .card-body {
+  padding: 10px;
+}
+
+.DiscontinuedModels a {
+  color: #686767;
+  font-size: 14px;
+  font-weight: normal;
+  margin-bottom: 0px;
+  text-decoration: none;
+}
+
+.DiscontinuedModels a span {
+  float: right;
+}
+
+.StillNotSure {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.StillNotSure h2 {
+  color: #262626;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.StillNotSure img {
+  display: block;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.StillNotSure p {
+  color: #262626;
+  font-size: 18px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.StillNotSure a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #e63a46;
+  margin-bottom: 50px;
+}
+
+.GetAmazingFinanceOffersSmall {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.GetAmazingFinanceOffersSmall h4 {
+  color: #262626;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 10px;
+  padding-top: 15px;
+  text-align: center;
+}
+
+.GetAmazingFinanceOffersSmall p {
+  color: #868686;
+  font-weight: normal;
+  font-size: 13px;
+  text-align: center;
+}
+
+.GetAmazingFinanceOffersSmall a {
+  color: #e63a46;
+  border: 1px solid #e63a46;
+  background-color: transparent;
+  font-size: 14px;
+  padding: 10px;
+  text-align: center !important;
+  font-weight: bold;
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+  width: 115px;
+}
+
+.GetAmazingFinanceOffersSmall a:hover {
+  color: #fff;
+  border: 1px solid #e63a46;
+  background-color: #e63a46;
+  text-decoration: none;
+}
+
+.TrendingToyotaCars {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.TrendingToyotaCars .card .card-body {
+  padding: 0px;
+}
+
+.TrendingToyotaCars .card .card-body h4 {
+  color: #262626;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 10px;
+  padding-top: 15px;
+  padding-left: 15px;
+}
+
+.TrendingToyotaCars .card .card-body p {
+  color: #868686;
+  font-weight: normal;
+  font-size: 13px;
+  text-align: center;
+}
+
+.TrendingToyotaCars .card .card-body ul {
+  background-color: rgba(30, 53, 87, 0.89);
+  text-align: center;
+}
+
+.TrendingToyotaCars .card .card-body ul li a {
+  color: #fff;
+  padding: 10px;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.TrendingToyotaCars .card .card-body .nav-pills .nav-link.active {
+  background-color: #0d2241;
+  color: #fff;
+}
+
+.TrendingToyotaCars .card .card-body .tab-content img {
+  float: left;
+  border-radius: 5px;
+  width: 85px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.TrendingToyotaCars .card .card-body .tab-content .ModalName {
+  font-size: 13px;
+  color: #262626;
+  padding-top: 10px;
+}
+
+.TrendingToyotaCars .card .card-body .tab-content p {
+  font-size: 12px;
+  color: #848484;
+  text-align: left;
 }
 /*# sourceMappingURL=style.css.map */

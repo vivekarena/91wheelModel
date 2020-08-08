@@ -36,12 +36,14 @@ $("#ExpertOpinion,#ExpertOpinion2").owlCarousel({
         }
     }
 });
-$("#TrendingPlans").owlCarousel({
-    margin: 20,
+$("#TopNotch").owlCarousel({
+    margin: 10,
     loop: true,
     autoPlay: true,
     smartSpeed: 1000,
+    autoWidth:true,
     nav: false,
+    items:4,
     dots: false,
     responsive: {
         0: {
@@ -52,6 +54,26 @@ $("#TrendingPlans").owlCarousel({
         },
         1024: {
             items: 3
+        }
+
+    }
+});
+$("#DealersNearYou").owlCarousel({
+    margin: 10,
+    loop: true,
+    autoPlay: true,
+    smartSpeed: 1000,
+    nav: true,
+    dots: false,
+    responsive: {
+        0: {
+            items: 1
+        },
+        768: {
+            items: 2
+        },
+        1024: {
+            items: 2
         }
 
     }
