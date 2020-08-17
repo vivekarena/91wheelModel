@@ -3,19 +3,24 @@ body {
 }
 
 .bannerBg {
-  background-image: url("/img/bannerBg.jpg");
+  background-image: url("../img/bannerBg.jpg");
   height: 552px;
   background-position: center center;
 }
 
+.bannerBg .mobileBtn {
+  display: none;
+}
+
 .bannerBg .productInfo {
   position: absolute;
-  top: 14%;
+  top: 0%;
   right: 30px;
   background-color: #fff;
   border-radius: 6px;
   height: 372px;
   width: 430px;
+  margin-top: 6%;
 }
 
 .bannerBg .productInfo .pdLeft {
@@ -92,6 +97,19 @@ body {
   color: #fff;
 }
 
+.bannerBg .productInfo .ContactDealerMobile {
+  background-color: #148016;
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  position: absolute;
+  top: -250px;
+  right: 10px;
+  color: #fff;
+  border: 1px solid #fff;
+  display: none;
+}
+
 .bannerBg .productInfo .ViewAvailableOffers {
   border-radius: 5px;
   border: solid 1px #e63a46;
@@ -118,8 +136,14 @@ body {
   color: #262626;
   font-size: 12px;
   font-weight: bold;
-  padding-top: 20px;
-  padding-left: 20px;
+  padding-top: 16px;
+  padding-left: 10px;
+}
+
+.bannerBg .productInfo .ExpertReview img {
+  width: 40px;
+  float: left;
+  margin-right: 15px;
 }
 
 .bannerBg .productInfo .ExpertReview span {
@@ -151,7 +175,6 @@ body {
 .form-control:focus {
   outline: 0;
   border-color: transparent !important;
-  -webkit-box-shadow: none;
   box-shadow: none;
 }
 
@@ -183,6 +206,8 @@ body {
 
 .KeySpecifications {
   margin-top: 40px;
+  width: 100%;
+  height: auto;
 }
 
 .KeySpecifications h2 {
@@ -192,7 +217,7 @@ body {
 }
 
 .KeySpecifications .designArea .widt20 {
-  width: 20%;
+  width: 100%;
   float: left;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -208,6 +233,8 @@ body {
 .KeySpecifications .designArea .widt20 .graphic img {
   display: block;
   margin: auto;
+  width: 70px;
+  height: 70px;
 }
 
 .KeySpecifications .designArea .widt20 .mileage {
@@ -215,7 +242,7 @@ body {
   font-weight: normal;
   color: #848484;
   text-align: center;
-  margin-top: 0px;
+  margin-top: 10px;
 }
 
 .KeySpecifications .designArea .widt20 .kmpl {
@@ -537,6 +564,10 @@ body {
   margin-top: 10px;
 }
 
+.UserReviews .card .card-body .leftArea .fas {
+  display: none;
+}
+
 .UserReviews .card .card-body .leftArea .lbl {
   color: #a2a2a2;
   font-weight: normal;
@@ -563,6 +594,12 @@ body {
   font-size: 16px;
   margin-top: 15px;
   text-transform: uppercase;
+}
+
+.UserReviews .card .card-body .rightArea .RatingImg {
+  color: #ff9e00;
+  font-weight: bold;
+  font-size: 12px;
 }
 
 .UserReviews .card .card-body .rightArea p {
@@ -639,8 +676,7 @@ body {
 .TopNotch .owl-carousel .owl-next {
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   width: 25px;
   height: 25px;
 }
@@ -705,7 +741,6 @@ body {
   bottom: 0;
   right: 0;
   opacity: 0;
-  -webkit-transition: all 0.4s ease-in-out 0s;
   transition: all 0.4s ease-in-out 0s;
 }
 
@@ -732,9 +767,7 @@ body {
   top: 50%;
   left: 50%;
   opacity: 0;
-  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  -webkit-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
 }
 
@@ -773,8 +806,7 @@ body {
 .DealersNearYou .owl-carousel .owl-next {
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   width: 25px;
   height: 25px;
 }
@@ -987,7 +1019,7 @@ body {
   font-size: 16px;
   margin-bottom: 10px;
   padding-top: 15px;
-  padding-left: 15px;
+  padding-left: 12px;
 }
 
 .nearByCities .card .card-body p {
@@ -997,25 +1029,34 @@ body {
   text-align: center;
 }
 
-.nearByCities .card .card-body .table thead {
+.nearByCities .card .card-body .head {
+  background-color: #1e3557;
+}
+
+.nearByCities .card .card-body .city, .nearByCities .card .card-body .Price {
   background-color: #1e3557;
   color: #fff;
   font-weight: normal;
   font-size: 13px;
-}
-
-.nearByCities .card .card-body .table thead th {
   padding: 5px 15px;
 }
 
-.nearByCities .card .card-body .table tbody {
+.nearByCities .card .card-body .citys {
   color: #262626;
   font-weight: normal;
   font-size: 13px;
+  margin-bottom: 0px;
+  padding-left: 15px;
+  margin-top: 10px;
 }
 
-.nearByCities .card .card-body .table tbody td {
-  padding: 5px 14px;
+.nearByCities .card .card-body .prices {
+  color: #262626;
+  font-weight: normal;
+  font-size: 13px;
+  margin-bottom: 0px;
+  padding-left: 15px;
+  margin-top: 10px;
 }
 
 .TrendingToyotaCars {
@@ -1109,5 +1150,748 @@ body {
 
 .MonthlyInstallmentFortuner img {
   margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .bannerBg {
+    background-image: url("../img/smallBg.jpg");
+    min-height: 500px;
+    height: auto;
+    background-repeat: no-repeat;
+    background-position: top center;
+    width: 100%;
+  }
+  .bannerBg .mobileBtn {
+    display: block;
+    z-index: 1;
+    padding: 10px;
+    width: 50%;
+    height: auto;
+    margin-top: 200px;
+  }
+  .bannerBg .mobileBtn .btn360 {
+    font-size: 12px;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 0px;
+    padding-top: 5px;
+    display: inline-block;
+  }
+  .bannerBg .mobileBtn .btn360 img {
+    width: 20px;
+  }
+  .bannerBg .mobileBtn .btnColor {
+    font-size: 12px;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 0px;
+    padding-top: 5px;
+    display: inline-block;
+  }
+  .bannerBg .mobileBtn .btnColor img {
+    width: 13px;
+  }
+  .bannerBg .productInfo {
+    position: static;
+    background-color: #fff;
+    border-radius: 0px;
+    padding-bottom: 20px;
+    width: 100%;
+    height: auto;
+    margin-top: 0px;
+  }
+  .bannerBg .productInfo .pdLeft {
+    padding: 20px;
+  }
+  .bannerBg .productInfo .ProName {
+    font-size: 20px;
+    font-weight: bold;
+    color: #262626;
+    margin-top: 0px;
+  }
+  .bannerBg .productInfo .ProName span {
+    font-size: 12px;
+    font-weight: normal;
+    color: #888888;
+  }
+  .bannerBg .productInfo .Reviews {
+    font-size: 12px;
+    font-weight: normal;
+    color: #ff9e00;
+    margin-top: 3px;
+  }
+  .bannerBg .productInfo label {
+    font-size: 12px;
+    font-weight: normal;
+    color: #949494;
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+  .bannerBg .productInfo select {
+    border: none;
+    border-bottom-color: #ccc;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    padding-left: 0px;
+  }
+  .bannerBg .productInfo .ProPrice {
+    color: #262626;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+  .bannerBg .productInfo .ViewPrice {
+    color: #1a9fa5;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    text-align: right;
+  }
+  .bannerBg .productInfo .ContactDealer {
+    display: none;
+    border-radius: 5px;
+    border: solid 1px #e63a46;
+    background-color: #ffffff;
+    width: 127px;
+    height: 36px;
+    color: #e63a46;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 15px;
+  }
+  .bannerBg .productInfo .ContactDealer:hover {
+    border: solid 1px #e63a46;
+    background-color: #e63a46;
+    color: #fff;
+  }
+  .bannerBg .productInfo .ContactDealerMobile {
+    background-color: #148016;
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    position: absolute;
+    top: -250px;
+    right: 10px;
+    color: #fff;
+    border: 1px solid #fff;
+  }
+  .bannerBg .productInfo .ViewAvailableOffers {
+    border-radius: 5px;
+    border: solid 1px #e63a46;
+    background-color: #e63a46;
+    width: 100%;
+    height: 36px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  .bannerBg .productInfo .ViewAvailableOffers:hover {
+    border: solid 1px #e63a46;
+    background-color: #fff;
+    color: #e63a46;
+  }
+  .bannerBg .productInfo .ExpertReview {
+    border-radius: 4px;
+    background-color: rgba(20, 128, 22, 0.09);
+    width: 100%;
+    height: auto;
+    color: #262626;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px;
+    padding-right: 0px;
+  }
+  .bannerBg .productInfo .ExpertReview span {
+    color: #148016;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 15px;
+  }
+  .bannerBg .productInfo .ExpertReview label {
+    font-size: 12px;
+    font-weight: normal;
+    color: #434343;
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+  .bannerBg .productInfo .ExpertReview img {
+    width: 35px;
+    float: left;
+    margin-right: 10px;
+  }
+  .bannerBg .productInfo .rightArrow {
+    width: 100%;
+    height: auto;
+    padding: 12px 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+  }
+  .bannerBg .productInfo .rightArrow .fas {
+    font-size: 30px;
+  }
+  .KeySpecifications {
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+  }
+  .KeySpecifications h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #262626;
+  }
+  .KeySpecifications .designArea .widt20 {
+    width: 100%;
+    float: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .KeySpecifications .designArea .widt20 .graphic {
+    width: 70px;
+    height: auto;
+    margin: auto;
+    border-radius: 100%;
+  }
+  .KeySpecifications .designArea .widt20 .graphic img {
+    display: block;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5px;
+  }
+  .KeySpecifications .designArea .widt20 .mileage {
+    font-size: 12px;
+    font-weight: normal;
+    color: #848484;
+    text-align: center;
+  }
+  .KeySpecifications .designArea .widt20 .kmpl {
+    font-size: 16px;
+    font-weight: bold;
+    color: #262626;
+    text-align: center;
+    margin-top: 5px;
+  }
+  .KeySpecifications .designArea a {
+    font-size: 14px;
+    font-weight: bold;
+    color: #e63a46;
+    margin-left: 12px;
+  }
+  .ExpertOpinion {
+    margin-top: 50px;
+  }
+  .ExpertOpinion .card .card-body {
+    padding: 10px;
+  }
+  .ExpertOpinion h2 {
+    color: #262626;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  .ExpertOpinion p {
+    color: #262626;
+    font-size: 12px;
+    font-weight: normal;
+    width: 80%;
+    margin: auto;
+    margin-top: 5px;
+  }
+  .ExpertOpinion p .numb {
+    font-size: 10px;
+    font-weight: normal;
+    text-align: right;
+    float: right;
+  }
+  .ExpertOpinion .progress {
+    height: 5px;
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+  }
+  .ExpertOpinion .progress .progress-bar {
+    width: 80%;
+  }
+  .ExpertOpinion .expertName {
+    color: #262626;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 15px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .ExpertOpinion .info {
+    color: #6d7278;
+    font-weight: normal;
+    font-size: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .ExpertOpinion .owl-carousel .item img {
+    display: block;
+    margin: auto;
+    width: 90px;
+    height: 90px;
+    margin-top: 20px;
+  }
+  .ExpertOpinion .FeaturesCar1 {
+    background-color: #ebf4fd;
+    border: 1px solid #026cdf;
+    border-radius: 5px;
+    height: auto;
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+  }
+  .ExpertOpinion .FeaturesCar1 h5 {
+    color: #262626;
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  .ExpertOpinion .FeaturesCar1 ul {
+    padding-left: 13px;
+    margin-bottom: 0px;
+  }
+  .ExpertOpinion .FeaturesCar1 ul li {
+    color: #6d7278;
+    font-weight: normal;
+    font-size: 12px;
+  }
+  .ExpertOpinion .FeaturesCar1 a {
+    color: #026cdf;
+    font-weight: normal;
+    font-size: 12px;
+  }
+  .ExpertOpinion .FeaturesCar2 {
+    background-color: #fbebeb;
+    border: 1px solid #d93a3a;
+    border-radius: 5px;
+    height: auto;
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+  }
+  .ExpertOpinion .FeaturesCar2 h5 {
+    color: #262626;
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  .ExpertOpinion .FeaturesCar2 ul {
+    padding-left: 13px;
+    margin-bottom: 0px;
+  }
+  .ExpertOpinion .FeaturesCar2 ul li {
+    color: #6d7278;
+    font-weight: normal;
+    font-size: 12px;
+  }
+  .ExpertOpinion .FeaturesCar2 a {
+    color: #d93a3a;
+    font-weight: normal;
+    font-size: 12px;
+  }
+  .UserReviews {
+    margin-top: 50px;
+  }
+  .UserReviews .buttons {
+    margin-top: 14px;
+    text-align: center;
+  }
+  .UserReviews .buttons .CarReview {
+    color: #e63a46;
+    background-color: transparent;
+    border: 1px solid #e63a46;
+    margin-left: 5px;
+    font-size: 14px;
+  }
+  .UserReviews .buttons .CarReview:hover {
+    color: #fff;
+    background-color: #e63a46;
+    border: 1px solid #e63a46;
+  }
+  .UserReviews .buttons .UserReviewsBtn {
+    color: #fff;
+    background-color: #e63a46;
+    border: 1px solid #e63a46;
+    margin-right: 5px;
+    font-size: 14px;
+  }
+  .UserReviews .buttons .UserReviewsBtn:hover {
+    color: #e63a46;
+    background-color: transparent;
+    border: 1px solid #e63a46;
+  }
+  .UserReviews .nav-tabs .nav-item.show .nav-link {
+    color: #e63a46;
+    background-color: transparent;
+    border: none;
+  }
+  .UserReviews .nav-tabs .nav-link.active {
+    color: #e63a46;
+    background-color: transparent;
+    border: none;
+    border-bottom-color: #e63a46;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+  }
+  .UserReviews .nav-tabs .nav-item {
+    color: #000;
+    background-color: transparent;
+  }
+  .UserReviews .card {
+    margin-top: 50px;
+  }
+  .UserReviews .card .card-body {
+    padding: 20px 0px;
+  }
+  .UserReviews .card .card-body .leftArea {
+    border: none;
+    border-bottom-color: #cfcfcf;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 15px;
+  }
+  .UserReviews .card .card-body .leftArea img {
+    display: block;
+    margin-left: 0px;
+    position: absolute;
+    top: -50px;
+  }
+  .UserReviews .card .card-body .leftArea .fas {
+    display: inline-block;
+    color: #999999;
+    margin-right: 5px;
+  }
+  .UserReviews .card .card-body .leftArea .uName {
+    color: #262626;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: left;
+    margin-top: 20px;
+  }
+  .UserReviews .card .card-body .leftArea .lbl {
+    display: none;
+    color: #a2a2a2;
+    font-weight: normal;
+    font-size: 12px;
+    text-align: left;
+    margin-top: 0px;
+  }
+  .UserReviews .card .card-body .leftArea .info {
+    color: #262626;
+    font-weight: normal;
+    font-size: 12px;
+    text-align: left;
+    margin-top: 0px;
+  }
+  .UserReviews .card .card-body .rightArea {
+    padding: 0px 10px 0px 10px;
+  }
+  .UserReviews .card .card-body .rightArea .RatingImg {
+    color: #ff9e00;
+    font-weight: bold;
+    font-size: 12px;
+  }
+  .UserReviews .card .card-body .rightArea h4 {
+    color: #262626;
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: 15px;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+  }
+  .UserReviews .card .card-body .rightArea p {
+    color: #262626;
+    font-weight: normal;
+    font-size: 12px;
+    margin-top: 2px;
+    margin-bottom: 8px;
+  }
+  .UserReviews .card .card-body .Feature {
+    color: #1a9fa5;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 0px;
+  }
+  .UserReviews .card .card-body .FeatureWise {
+    color: #262626;
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: 5px;
+    width: 50%;
+    float: left;
+  }
+  .UserReviews .card .card-body .FeatureWise span {
+    color: #898989;
+    font-weight: bold;
+    font-size: 12px;
+  }
+  .UserReviews .card .card-body .carImage {
+    color: #1a9fa5;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
+  }
+  .TopNotch {
+    margin-top: 40px;
+  }
+  .TopNotch h2 {
+    color: #262626;
+    font-weight: bold;
+    font-size: 19px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+  .TopNotch p {
+    color: #262626;
+    font-size: 16px;
+    font-weight: normal;
+    width: 80%;
+    margin: auto;
+    margin-top: 5px;
+  }
+  .TopNotch .btn {
+    color: #fff;
+    background-color: #e63a46;
+    border: 1px solid #e63a46;
+    font-size: 14px;
+    width: 95%;
+    display: block;
+    margin: auto;
+    margin-top: 23px;
+  }
+  .TopNotch .btn:hover {
+    color: #e63a46;
+    background-color: transparent;
+    border: 1px solid #e63a46;
+  }
+  .TopNotch .owl-carousel .owl-prev,
+  .TopNotch .owl-carousel .owl-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 25px;
+    display: none;
+  }
+  .TopNotch .owl-carousel .owl-prev {
+    left: -2rem;
+  }
+  .TopNotch .owl-carousel .owl-next {
+    right: -2rem;
+  }
+  .TopNotch .owl-carousel .owl-nav button.owl-prev {
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+  }
+  .TopNotch .owl-carousel .owl-nav button.owl-prev span {
+    font-size: 30px;
+    line-height: 1;
+  }
+  .TopNotch .owl-carousel .owl-nav button.owl-next {
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+  }
+  .TopNotch .owl-carousel .owl-nav button.owl-next span {
+    font-size: 30px;
+    line-height: 1;
+  }
+  .TopNotch .owl-carousel button.owl-dot {
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+  }
+  .TopNotch .content {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    overflow: hidden;
+  }
+  .TopNotch .content .content-overlay {
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    height: 99%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    transition: all 0.4s ease-in-out 0s;
+  }
+  .TopNotch .content:hover .content-overlay {
+    opacity: 1;
+  }
+  .TopNotch .content:hover .content-details {
+    top: 80%;
+    left: 50%;
+    opacity: 1;
+  }
+  .TopNotch .content-image {
+    width: 100%;
+  }
+  .TopNotch .content-details {
+    position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease-in-out 0s;
+  }
+  .TopNotch .content-details p {
+    color: #fff;
+    font-size: 13px;
+    font-weight: normal;
+    border-left-color: #e63a46;
+    border-left-style: solid;
+    border-left-width: 2px;
+    text-align: left;
+    padding-left: 10px;
+  }
+  .TopNotch .fadeIn-bottom {
+    top: 80%;
+  }
+  .TopNotch .fadeIn-top {
+    top: 20%;
+  }
+  .TopNotch .fadeIn-left {
+    left: 20%;
+  }
+  .TopNotch .fadeIn-right {
+    left: 80%;
+  }
+  .DealersNearYou {
+    margin-top: 50px;
+  }
+  .DealersNearYou .owl-carousel .owl-prev,
+  .DealersNearYou .owl-carousel .owl-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 25px;
+    display: none;
+  }
+  .DealersNearYou .owl-carousel .owl-prev {
+    left: -2rem;
+  }
+  .DealersNearYou .owl-carousel .owl-next {
+    right: -2rem;
+  }
+  .DealersNearYou .owl-carousel .owl-nav button.owl-prev {
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+  }
+  .DealersNearYou .owl-carousel .owl-nav button.owl-next {
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+  }
+  .DealersNearYou .owl-carousel button.owl-dot {
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+  }
+  .DealersNearYou h2 {
+    color: #262626;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .DealersNearYou h2 span {
+    color: #e63a46;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .DealersNearYou h2 span small {
+    color: #888888;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .DealersNearYou .card h6 {
+    color: #262626;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .DealersNearYou .card p {
+    color: #686767;
+    font-size: 10px;
+    font-weight: normal;
+    margin-bottom: 8px;
+  }
+  .DealersNearYou .card p img {
+    width: 15px;
+    height: 15px;
+    float: left;
+    margin-right: 7px;
+    margin-bottom: 0px;
+  }
+  .DealersNearYou .card .wtsApp {
+    color: #42a956;
+    font-size: 10px;
+    font-weight: bold;
+  }
+  .DealersNearYou .card .wtsApp img {
+    width: 15px;
+    height: 15px;
+    float: left;
+    margin-right: 10px;
+    margin-top: 5px;
+  }
+  .DiscontinuedModels {
+    margin-top: 35px;
+  }
+  .DiscontinuedModels h2 {
+    color: #262626;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .DiscontinuedModels .card {
+    margin-bottom: 10px;
+  }
+  .DiscontinuedModels .card .card-body {
+    padding: 6px 10px;
+  }
+  .DiscontinuedModels a {
+    color: #686767;
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 0px;
+    text-decoration: none;
+  }
+  .DiscontinuedModels a span {
+    float: right;
+  }
 }
 /*# sourceMappingURL=style.css.map */

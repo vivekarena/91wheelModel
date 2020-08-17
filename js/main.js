@@ -17,6 +17,25 @@ $("#bannerSlider").owlCarousel({
         }
     }
 });
+$("#KeySpecifications").owlCarousel({
+    margin: 0,
+    loop: true,
+    autoplay: true,
+    autoplayTimeout:2000,
+    nav: false,
+    dots: false,
+    responsive: {
+        0: {
+            items: 3
+        },
+        768: {
+            items: 3
+        },
+        1024: {
+            items: 5
+        }
+    }
+});
 $("#ExpertOpinion,#ExpertOpinion2").owlCarousel({
     margin: 0,
     nav: false,
@@ -65,6 +84,7 @@ $("#DealersNearYou").owlCarousel({
     smartSpeed: 1000,
     nav: true,
     dots: false,
+    autoplayHoverPause: true,
     responsive: {
         0: {
             items: 1
